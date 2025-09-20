@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { ModeToggle } from "./mode-toggle"
 
-export function Navbar() {
+export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = () => {
