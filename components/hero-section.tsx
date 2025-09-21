@@ -1,17 +1,23 @@
+"use client";
+
+import { Vortex } from "./ui/vortex";
+
 export default function HeroSection() {
   return (
+    <Vortex>
     <section
       id="hero"
       className="relative h-screen flex items-center justify-center"
     >
+
       <div className="container mx-auto px-4 flex flex-col items-center text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-in fade-in slide-in-from-bottom duration-700">
-          Hi, I'm <span className="text-primary">Nawab Moazzam</span>
+          Hi, I'm <span className="text-violet-600">Nawab Moazzam</span>
         </h1>
-        <h2 className="text-xl md:text-2xl text-muted-foreground mb-8 animate-in fade-in slide-in-from-bottom duration-700 delay-200">
+        <h2 className="text-xl md:text-2xl text-foreground mb-8 animate-in fade-in slide-in-from-bottom duration-700 delay-200">
           Web Developer & Designer
         </h2>
-        <p className="max-w-2xl text-muted-foreground mb-8 animate-in fade-in slide-in-from-bottom duration-700 delay-400">
+        <p className="max-w-2xl text-foreground mb-8 animate-in fade-in slide-in-from-bottom duration-700 delay-400">
           I create modern, responsive websites with clean and efficient code. As
           a fresher in the industry, I'm passionate about building beautiful
           digital experiences that solve real problems.
@@ -47,12 +53,13 @@ export default function HeroSection() {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="text-muted-foreground"
+            className="text-foreground"
           >
             <path d="M12 5v14M5 12l7 7 7-7" />
           </svg>
         </a>
       </div>
     </section>
+      </Vortex>
   );
 }
