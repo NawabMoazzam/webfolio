@@ -10,7 +10,7 @@ export default function ProjectsSection() {
             <h2 className="text-3xl font-bold mb-12 text-center animate-in fade-in duration-700">My Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Project 1 */}
-              <BackgroundGradient className="rounded-[22px] overflow-hidden bg-card hover:shadow-lg transition-all group animate-in fade-in slide-in-from-bottom duration-700">
+              <BackgroundGradient className="rounded-[22px] overflow-hidden bg-card hover:shadow-lg transition-all group animate-in fade-in slide-in-from-bottom duration-700 hover:-translate-1">
                 <div className="aspect-video relative bg-muted flex items-center justify-center">
                   <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
                   <span className="text-muted-foreground">Project Screenshot</span>
@@ -37,7 +37,7 @@ export default function ProjectsSection() {
               </div> */}
               
               {/* Project 2 */}
-              <BackgroundGradient className="rounded-[22px] overflow-hidden bg-card hover:shadow-lg transition-all group animate-in fade-in slide-in-from-bottom duration-700">
+              <BackgroundGradient className="rounded-[22px] overflow-hidden bg-card hover:shadow-lg transition-all group animate-in fade-in slide-in-from-bottom duration-700 hover:-translate-1">
                 <div className="aspect-video relative bg-muted flex items-center justify-center">
                   <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
                   <span className="text-muted-foreground">Project Screenshot</span>
@@ -62,7 +62,7 @@ export default function ProjectsSection() {
               </BackgroundGradient>
               
               {/* Project 3 */}
-              <BackgroundGradient className="rounded-[22px] overflow-hidden bg-card hover:shadow-lg transition-all group animate-in fade-in slide-in-from-bottom duration-700">
+              <BackgroundGradient className="rounded-[22px] overflow-hidden bg-card hover:shadow-lg transition-all group animate-in fade-in slide-in-from-bottom duration-700 hover:-translate-1">
                 <div className="aspect-video relative bg-muted flex items-center justify-center">
                   <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
                   <span className="text-muted-foreground">Project Screenshot</span>
