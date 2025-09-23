@@ -7,11 +7,12 @@ const SkillsSection = () => {
     { name: 'HTML/CSS', level: 90, color: 'from-orange-500 to-red-500' },
     { name: 'JavaScript', level: 85, color: 'from-yellow-400 to-amber-500' },
     { name: 'React', level: 80, color: 'from-cyan-400 to-sky-500' },
-    { name: 'Next.js', level: 75, color: 'from-neutral-800 to-neutral-900' },
+    { name: 'Next.js', level: 75, color: 'from-neutral-400 to-neutral-600' },
     { name: 'Tailwind CSS', level: 85, color: 'from-cyan-500 to-sky-600' },
     { name: 'Node.js', level: 75, color: 'from-green-500 to-emerald-500' },
     { name: 'TypeScript', level: 70, color: 'from-blue-600 to-indigo-600' },
     { name: 'API Development', level: 70, color: 'from-purple-500 to-violet-500' },
+    { name: 'MongoDB', level: 70, color: 'from-lime-500 to-lime-700' },
   ];
 
   return (
@@ -27,7 +28,7 @@ const SkillsSection = () => {
         >
           My Skills
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {skills.map((skill, index) => (
             <FloatingAnimation 
               key={skill.name} 

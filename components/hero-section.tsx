@@ -1,13 +1,11 @@
 "use client";
 
-import { Vortex } from "./ui/vortex";
 import { BackgroundRippleEffect } from "./ui/background-ripple-effect";
 import FloatingAnimation from "./ui/floating-animation";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    // <Vortex>
-
     <section
       id="hero"
       className="relative h-screen w-full flex items-center justify-center"
@@ -16,7 +14,7 @@ export default function HeroSection() {
         <BackgroundRippleEffect />
         <div className="container mx-auto my-auto px-4 flex flex-col items-center text-center z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-in fade-in slide-in-from-bottom duration-700">
-            Hi, I'm <span className="text-violet-600">Nawab Moazzam</span>
+            Hi, I'm <span className="text-violet-500">Moazzam Mubashar</span>
           </h1>
           <h2 className="text-2xl md:text-3xl font-medium text-foreground mb-8 animate-in fade-in slide-in-from-bottom duration-700 delay-200">
             Web Developer & Designer
@@ -27,18 +25,18 @@ export default function HeroSection() {
             beautiful digital experiences that solve real problems.
           </p>
           <div className="flex gap-4 animate-in fade-in slide-in-from-bottom duration-700 delay-600">
-            <a
+            <Link
               href="#projects"
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-lg font-medium transition-all hover:translate-y-[-2px]"
             >
               View My Work
-            </a>
-            <a
+            </Link>
+            <Link
               href="#contact"
               className="border border-border hover:bg-secondary px-6 py-3 rounded-lg font-medium transition-all hover:translate-y-[-2px]"
             >
               Contact Me
-            </a>
+            </Link>
           </div>
         </div>
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
@@ -51,7 +49,6 @@ export default function HeroSection() {
             </div>
           </FloatingAnimation>
         </div>
-        {/* </Vortex> */}
       </div>
     </section>
   );

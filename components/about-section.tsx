@@ -16,14 +16,14 @@ export default function AboutSection() {
           <FloatingAnimation yOffset={15} duration={3}>
             <div className="animate-in fade-in slide-in-from-left duration-700">
               <div className="aspect-square relative rounded-xl overflow-hidden border border-border shadow-xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent"></div>
+                {/* <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent"></div> */}
                 <div className="flex items-center justify-center h-full bg-muted/50">
                   {/* <span className="text-muted-foreground">Your Photo</span> */}
                   <Image
                     src="/profile.jpg"
                     alt="Profile Photo"
-                    width={300}
-                    height={300}
+                    width={3480}
+                    height={3480}
                     className="w-full h-full"
                   />
                 </div>
