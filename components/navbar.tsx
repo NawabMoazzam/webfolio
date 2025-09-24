@@ -22,20 +22,23 @@ export default function Navbar() {
         <Link href="/" className="text-xl font-bold">
           {currentTheme === "dark" && (
             <Image
+              alt="Logo"
               src="/logo-light.svg"
               width="144"
               height="72"
-              alt="Logo"
               className="w-24 md:w-36 h-auto"
+              fetchPriority="auto"
             />
           )}
           {currentTheme === "light" && (
             <Image
+              alt="Logo"
               src="/logo-dark.svg"
               width="144"
               height="72"
-              alt="Logo"
               className="w-24 md:w-36 h-auto"
+              fetchPriority="auto"
+              priority
             />
           )}
         </Link>

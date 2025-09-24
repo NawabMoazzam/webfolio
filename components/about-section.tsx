@@ -3,6 +3,8 @@ import Image from "next/image";
 import { FloatingAnimation } from "./ui/floating-animation";
 import { Badge } from "./ui/badge";
 import { BadgeCheckIcon } from "lucide-react";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function AboutSection() {
   return (
@@ -74,6 +76,12 @@ export default function AboutSection() {
                 Team Player
               </Badge>
             </div>
+            <Link
+              href="/resume.pdf"
+              download={true}
+            >
+              <Button className="mt-8 hover:translate-y-[-2px]">Download CV</Button>
+            </Link>
           </div>
         </div>
       </div>
