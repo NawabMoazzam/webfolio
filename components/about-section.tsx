@@ -35,9 +35,9 @@ export default function AboutSection() {
           <div className="animate-in fade-in slide-in-from-right duration-700 delay-200">
             <h3 className="text-2xl font-semibold mb-4">Who I Am</h3>
             <p className="text-muted-foreground mb-6">
-              I'm a passionate web developer with a strong foundation in modern
+              I&apos;m a passionate web developer with a strong foundation in modern
               web technologies. Recently graduated with a degree in Computer
-              Science, I'm eager to apply my skills and knowledge to create
+              Science, I&apos;m eager to apply my skills and knowledge to create
               impactful digital solutions.
             </p>
             <p className="text-muted-foreground mb-6">

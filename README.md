@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
+
+A modern, responsive portfolio website built with Next.js 15 and enhanced with Aceternity UI components.
+
+![Portfolio Preview](public/portfolio-preview.png)
+
+## Features
+
+- **Modern UI/UX**: Clean, professional design with smooth animations and transitions
+- **Responsive Design**: Fully responsive layout that works on all devices
+- **Dark/Light Mode**: Toggle between dark and light themes
+- **Interactive Components**: 3D cards, floating animations, and spotlight effects
+- **Contact Form**: Functional contact form for visitor inquiries
+- **Performance Optimized**: Fast loading times and smooth animations
+
+## Tech Stack
+
+- **Framework**: Next.js 15
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **UI Components**: Custom Aceternity UI components
+- **Deployment**: Ready for Vercel deployment
 
 ## Getting Started
 
-First, run the development server:
-
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Personal Information
+- Update your personal information in the respective section components
+- Replace placeholder images with your own in the `/public` directory
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Projects
+- Add your own projects in the `projects-section.tsx` component
+- Customize project cards with your own images, descriptions, and links
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Styling
+- Modify the color scheme in `tailwind.config.js`
+- Adjust animations and transitions in the UI components
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This portfolio is ready to be deployed on Vercel:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/portfolio)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Aceternity UI](https://ui.aceternity.com/)

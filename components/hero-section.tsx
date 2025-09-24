@@ -14,14 +14,14 @@ export default function HeroSection() {
         <BackgroundRippleEffect />
         <div className="container mx-auto my-auto px-4 flex flex-col items-center text-center z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-in fade-in slide-in-from-bottom duration-700">
-            Hi, I'm <span className="text-violet-500">Moazzam Mubashar</span>
+            Hi, I&apos;m <span className="text-violet-500">Moazzam Mubashar</span>
           </h1>
           <h2 className="text-2xl md:text-3xl font-medium text-foreground mb-8 animate-in fade-in slide-in-from-bottom duration-700 delay-200">
             Web Developer & Designer
           </h2>
           <p className="max-w-2xl text-foreground mb-8 animate-in fade-in slide-in-from-bottom duration-700 delay-400">
             I create modern, responsive websites with clean and efficient code.
-            As a fresher in the industry, I'm passionate about building
+            As a fresher in the industry, I&apos;m passionate about building
             beautiful digital experiences that solve real problems.
           </p>
           <div className="flex gap-4 animate-in fade-in slide-in-from-bottom duration-700 delay-600">

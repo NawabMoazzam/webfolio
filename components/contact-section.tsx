@@ -15,8 +15,7 @@ export default function ContactSection() {
   const {
     register,
     handleSubmit,
-    watch,
-    formState: { errors, isSubmitting },
+    formState: { isSubmitting },
   } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
@@ -33,8 +32,8 @@ export default function ContactSection() {
       } else {
         toast.error("Failed to send message.");
       }
-    } catch (error) {
-      toast.error("An error occurred. Please try again.");
+    } catch (error: any) {
+      toast.error(error.message);
     }
   };
 
@@ -48,8 +47,8 @@ export default function ContactSection() {
           <div className="animate-in fade-in slide-in-from-left duration-700">
             <h3 className="text-2xl font-semibold mb-4">Contact Information</h3>
             <p className="text-muted-foreground mb-6">
-              I'm currently looking for new opportunities. Whether you have a
-              question or just want to say hi, I'll try my best to get back to
+              I&apos;m currently looking for new opportunities. Whether you have a
+              question or just want to say hi, I&apos;ll try my best to get back to
               you!
             </p>
             <div className="space-y-4">
