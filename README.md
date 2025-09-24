@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with Next.js 15 and enhanced with Aceternity UI components.
 
-![Portfolio Preview](public/portfolio-preview.png)
+<!-- ![Portfolio Logo](public/logo-light.svg) -->
 
 ## Features
 
@@ -25,7 +25,7 @@ A modern, responsive portfolio website built with Next.js 15 and enhanced with A
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/NawabMoazzam/webfolio.git
 cd portfolio
 ```
 

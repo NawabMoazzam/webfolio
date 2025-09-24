@@ -32,8 +32,14 @@ export default function ContactSection() {
       } else {
         toast.error("Failed to send message.");
       }
-    } catch (error: any) {
-      toast.error(error.message);
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+    toast.error(`Caught an Error object: ${error.message}`);
+  } else if (typeof error === "string") {
+    toast.error(`Caught a string error: ${error}`);
+  } else {
+    toast.error(`Caught an unknown error: ${error}`);
+  }
     }
   };
 
