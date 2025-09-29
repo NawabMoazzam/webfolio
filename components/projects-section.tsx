@@ -51,7 +51,7 @@ export default function ProjectsSection() {
                   src={project.image}
                   fill
                   alt="Project Screenshot"
-                  className="w-auto h-auto p-2 rounded-t-[22px]"
+                  className="w-auto h-auto p-2 rounded-t-[22px] grayscale group-hover:grayscale-0"
                 />
               </div>
               <div className="p-6">
