@@ -75,7 +75,7 @@ export default function ContactSection() {
                 </svg>
                 <Link
                   href={"https://wa.me/+923026889246"}
-                  target="blank"
+                  target="_blank"
                   className="text-muted-foreground"
                 >
                   +92 3026889246
@@ -99,7 +99,7 @@ export default function ContactSection() {
                 </svg>
                 <Link
                   href={"mailto:cnstatus310@gmail.com"}
-                  target="blank"
+                  target="_blank"
                   className="text-muted-foreground"
                 >
                   cnstatus310@gmail.com
@@ -123,7 +123,7 @@ export default function ContactSection() {
                 </svg>
                 <Link
                   href={"https://maps.app.goo.gl/KZjkP3siGoQcCE2k8"}
-                  target="blank"
+                  target="_blank"
                   className="text-muted-foreground"
                 >
                   Khudian Khas, Kasur, Pakistan
@@ -135,7 +135,7 @@ export default function ContactSection() {
               <div className="flex gap-4">
                 <Link
                   href="https://github.com/NawabMoazzam"
-                  target="blank"
+                  target="_blank"
                   className="p-2 bg-secondary rounded-full hover:bg-primary hover:text-primary-foreground hover:scale-110 transition-all"
                   aria-label="GitHub"
                 >
@@ -157,7 +157,7 @@ export default function ContactSection() {
                 </Link>
                 <Link
                   href="https://www.instagram.com/moazzam_nawab_1"
-                  target="blank"
+                  target="_blank"
                   className="p-2 bg-secondary rounded-full hover:bg-primary hover:text-primary-foreground hover:scale-110 transition-all"
                   aria-label="LinkedIn"
                 >
@@ -180,7 +180,7 @@ export default function ContactSection() {
                 </Link>
                 <Link
                   href="https://wa.me/+923026889246"
-                  target="blank"
+                  target="_blank"
                   className="p-2 bg-secondary rounded-full hover:bg-primary hover:text-primary-foreground hover:scale-110 transition-all"
                   aria-label="Twitter"
                 >
