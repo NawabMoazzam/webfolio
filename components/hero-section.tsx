@@ -1,5 +1,3 @@
-"use client";
-
 import { BackgroundRippleEffect } from "./ui/background-ripple-effect";
 import FloatingAnimation from "./ui/floating-animation";
 import Link from "next/link";
@@ -14,7 +12,8 @@ export default function HeroSection() {
         <BackgroundRippleEffect />
         <div className="container mx-auto my-auto px-4 flex flex-col items-center text-center z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-in fade-in slide-in-from-bottom duration-700">
-            Hi, I&apos;m <span className="text-violet-500">Moazzam Mubashar</span>
+            Hi, I&apos;m{" "}
+            <span className="text-violet-500">Moazzam Mubashar</span>
           </h1>
           <h2 className="text-2xl md:text-3xl font-medium text-foreground mb-8 animate-in fade-in slide-in-from-bottom duration-700 delay-200">
             Web Developer & Designer

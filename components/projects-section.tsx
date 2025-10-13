@@ -1,5 +1,3 @@
-"use client";
-
 import { Badge } from "./ui/badge";
 import { BackgroundGradient } from "./ui/background-gradient";
 import Image from "next/image";
@@ -16,21 +14,21 @@ export default function ProjectsSection() {
       source_url: "https://github.com/NawabMoazzam/password-manager",
     },
     {
-      image: "/",
-      title: "E-commerce Website",
-      desc: "A responsive e-commerce platform built with React and Node.js. Features include product listings, cart functionality, and user authentication.",
-      tags: ["Next.js", "Typescript", "Tailwind CSS", "Clerk"],
-      web_url: "#",
-      source_url: "#",
+      image: "/strapi-blog.png",
+      title: "Modern Blog Platform",
+      desc: "A fully responsive, feature-rich blog platform built with Next.js 15, TypeScript, Tailwind CSS, and powered by Strapi CMS for content management.",
+      tags: ["Next.js", "Typescript", "Tailwind CSS", "Strapi", "ShadcnUi", "SEO Optimization"],
+      web_url: "https://strapi-blog-peach.vercel.app/",
+      source_url: "https://github.com/NawabMoazzam/strapi-blog",
     },
-    {
-      image: "/",
-      title: "Task Management App",
-      desc: "A productivity app that helps users organize tasks and track progress. Includes features like task categories, due dates, and progress tracking.",
-      tags: ["Next.js", "Typescript", "Tailwind CSS", "Clerk"],
-      web_url: "#",
-      source_url: "#",
-    },
+    // {
+    //   image: "/",
+    //   title: "Task Management App",
+    //   desc: "A productivity app that helps users organize tasks and track progress. Includes features like task categories, due dates, and progress tracking.",
+    //   tags: ["Next.js", "Typescript", "Tailwind CSS", "Clerk"],
+    //   web_url: "#",
+    //   source_url: "#",
+    // },
   ];
 
   return (
