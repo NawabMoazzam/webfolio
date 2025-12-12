@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://nawabwebfolio.vercel.app/sitemap.xml
-Disallow: https://nawabwebfolio.vercel.app/api
+Disallow: /api/
