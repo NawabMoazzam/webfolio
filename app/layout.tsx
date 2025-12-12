@@ -16,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Nawab Moazzam | Web Developer",
-  description: "Personal portfolio showcasing my skills, projects and experience as a web developer",
+  description:
+    "Personal portfolio showcasing my skills, projects and experience as a web developer",
 };
 
 export default function RootLayout({
@@ -36,8 +37,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Toaster position="bottom-right" richColors />
         </ThemeProvider>
-        <Toaster position="bottom-right" richColors />
       </body>
     </html>
   );

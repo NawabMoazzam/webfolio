@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { FloatingAnimation } from "./ui/floating-animation";
 import { Badge } from "./ui/badge";
@@ -18,9 +17,7 @@ export default function AboutSection() {
           <FloatingAnimation yOffset={15} duration={3}>
             <div className="animate-in fade-in slide-in-from-left duration-700">
               <div className="aspect-square relative rounded-xl overflow-hidden border border-border shadow-xl">
-                {/* <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent"></div> */}
                 <div className="flex items-center justify-center h-full bg-muted/50">
-                  {/* <span className="text-muted-foreground">Your Photo</span> */}
                   <Image
                     src="/profile.jpg"
                     alt="Profile Photo"

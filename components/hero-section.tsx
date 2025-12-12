@@ -1,6 +1,6 @@
-import { BackgroundRippleEffect } from "./ui/background-ripple-effect";
 import FloatingAnimation from "./ui/floating-animation";
 import Link from "next/link";
+import { Background } from "@/lib/clientside-wrapper";
 
 export default function HeroSection() {
   return (
@@ -9,11 +9,12 @@ export default function HeroSection() {
       className="relative h-screen w-full flex items-center justify-center"
     >
       <div className="relative flex min-h-screen w-full flex-col items-start justify-start overflow-hidden">
-        <BackgroundRippleEffect />
+        <Background />
+
         <div className="container mx-auto my-auto px-4 flex flex-col items-center text-center z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-in fade-in slide-in-from-bottom duration-700">
             Hi, I&apos;m{" "}
-            <span className="text-violet-500">Moazzam Mubashar</span>
+            <span className="text-primary">Moazzam Mubashar</span>
           </h1>
           <h2 className="text-2xl md:text-3xl font-medium text-foreground mb-8 animate-in fade-in slide-in-from-bottom duration-700 delay-200">
             Web Developer & Designer

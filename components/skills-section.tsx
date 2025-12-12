@@ -1,6 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
 import { FloatingAnimation } from './ui/floating-animation';
+import { MotionDiv, MotionH2 } from '@/lib/clientside-wrapper';
 
 const SkillsSection = () => {
   const skills = [
@@ -19,7 +18,7 @@ const SkillsSection = () => {
     <section id="skills" className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-[0.2]"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <motion.h2 
+        <MotionH2 
           className="text-3xl font-bold mb-12 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +26,7 @@ const SkillsSection = () => {
           viewport={{ once: true }}
         >
           My Skills
-        </motion.h2>
+        </MotionH2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {skills.map((skill, index) => (
             <FloatingAnimation 
@@ -36,7 +35,7 @@ const SkillsSection = () => {
               duration={2 + index * 0.2} 
               delay={index * 0.1}
             >
-              <motion.div
+              <MotionDiv
                 initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -48,15 +47,15 @@ const SkillsSection = () => {
                   <span className="text-muted-foreground font-medium">{skill.level}%</span>
                 </div>
                 <div className="w-full bg-muted rounded-full h-3 overflow-hidden">
-                  <motion.div
+                  <MotionDiv
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.level}%` }}
                     transition={{ duration: 1, delay: 0.2 + index * 0.1 }}
                     viewport={{ once: true }}
                     className={`h-3 rounded-full bg-gradient-to-r ${skill.color}`}
-                  ></motion.div>
+                  ></MotionDiv>
                 </div>
-              </motion.div>
+              </MotionDiv>
             </FloatingAnimation>
           ))}
         </div>

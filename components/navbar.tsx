@@ -1,16 +1,13 @@
-
+"use client";
 
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { theme, systemTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -19,28 +16,13 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 w-full z-50 bg-background/50 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <Link href="/" className="text-xl font-bold">
-          {currentTheme === "dark" && (
-            <Image
-              alt="Logo"
-              src="/logo-light.svg"
-              width="144"
-              height="72"
-              className="w-24 md:w-36 h-auto"
-              fetchPriority="auto"
-            />
-          )}
-          {currentTheme === "light" && (
-            <Image
-              alt="Logo"
-              src="/logo-dark.svg"
-              width="144"
-              height="72"
-              className="w-24 md:w-36 h-auto"
-              fetchPriority="auto"
-              priority
-            />
-          )}
+        <Link href="/" className="relative h-full w-24 md:w-52">
+          <Image
+            alt="Logo"
+            src="/logo.svg"
+            fill
+            className="object-contain"
+          />
         </Link>
 
         {/* Mobile menu button */}

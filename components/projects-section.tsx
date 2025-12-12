@@ -21,14 +21,6 @@ export default function ProjectsSection() {
       web_url: "https://strapi-blog-peach.vercel.app/",
       source_url: "https://github.com/NawabMoazzam/strapi-blog",
     },
-    // {
-    //   image: "/",
-    //   title: "Task Management App",
-    //   desc: "A productivity app that helps users organize tasks and track progress. Includes features like task categories, due dates, and progress tracking.",
-    //   tags: ["Next.js", "Typescript", "Tailwind CSS", "Clerk"],
-    //   web_url: "#",
-    //   source_url: "#",
-    // },
   ];
 
   return (

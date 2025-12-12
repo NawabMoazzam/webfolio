@@ -1,3 +1,4 @@
+"use client"
 import { MessageCircleMoreIcon } from "lucide-react";
 import Link from "next/link";
 import { useForm, SubmitHandler } from "react-hook-form";
